@@ -1,0 +1,32 @@
+.menu {
+    background: #333;
+    width: 21.875em;
+    position: absolute;
+    right: 3.75em;
+    padding: 1.25em;
+    top: 0;
+    z-index: 10;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2.5em;
+}
+
+.priceLine{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.875em;
+}
+
+.priceLine h2{
+    font-size: 1em;
+}
+
+.priceLine h2:nth-of-type(2){
+    color: #beeb14;
+    padding-bottom: 1.25em;
+}

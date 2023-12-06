@@ -1,0 +1,23 @@
+.cartButton {
+    position: relative;
+}
+
+.cartButton img{
+    cursor: pointer;
+}
+
+.number{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: #f00;
+    padding: 0.3em;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 0.875em;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
