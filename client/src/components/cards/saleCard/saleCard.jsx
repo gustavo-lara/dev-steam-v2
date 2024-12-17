@@ -5,7 +5,7 @@ const SaleCard = ({ title, discount, fullPrice, onAdd }) => {
   return (
     <div className={styles.saleCard}>
       <img
-        src={`/public/products/${title}.png`}
+        src={`/public/${title}.png`}
         alt=""
         width={"250"}
         height={"300"}

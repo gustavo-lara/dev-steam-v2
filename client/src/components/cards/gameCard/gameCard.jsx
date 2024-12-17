@@ -5,7 +5,7 @@ const GameCard = ({ children, title, info, price }) => {
   return (
     <div className={styles.gameCard}>
       <img
-        src={`/public/products/${title}.png`}
+        src={`/public/${title}.png`}
         alt={title}
         width={300}
         height={145}
