@@ -4,7 +4,7 @@ const CartOption = ({ img, title, price, onRemove }) => {
   return (
     <div className={styles.option}>
       <img
-        src={`/src/assets/products/${img}.png`}
+        src={`/public/products/${title}.png`}
         alt={title}
         width={62}
         height={64}

@@ -1,14 +1,14 @@
 import styles from "./gameCard.module.css";
 import Button from "../../forms/button/button";
 
-const GameCard = ({ children, title, info, price}) => {
+const GameCard = ({ children, title, info, price }) => {
   return (
     <div className={styles.gameCard}>
       <img
-      src={`/src/assets/products/${title}.png`}
-      alt={title}
-      width={300}
-      height={145}
+        src={`/public/products/${title}.png`}
+        alt={title}
+        width={300}
+        height={145}
       />
       <div className={styles.info}>
         <h3>{children}</h3>
@@ -16,7 +16,7 @@ const GameCard = ({ children, title, info, price}) => {
         <div className={styles.pricing}>
           <h2>R${price}</h2>
           {title != "gameOver" && <Button>Adicionar ao Carrinho</Button>}
-          
+
         </div>
       </div>
     </div>
