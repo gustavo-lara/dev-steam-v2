@@ -4,12 +4,13 @@
   font-family: "Inter", sans-serif;
 }
 
-body, html {
+body,
+html {
   background: #1b2838;
   color: #fff;
 }
 
-.saleContainer{
+.saleContainer {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -17,11 +18,14 @@ body, html {
   flex-wrap: wrap;
 }
 
-.gameSession{
-  margin: 5em;
+.gameSession {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5em;
 }
 
-.gameContainer{
+.gameContainer {
   display: flex;
   flex-direction: column;
   gap: 1.3em;
@@ -29,7 +33,7 @@ body, html {
 }
 
 @media (max-width: 850px) {
-  .saleContainer{
+  .saleContainer {
     justify-content: center;
   }
 }

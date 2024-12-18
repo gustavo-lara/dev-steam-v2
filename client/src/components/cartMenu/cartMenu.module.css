@@ -1,11 +1,17 @@
 .menu {
     background: #333;
     width: 21.875em;
-    position: absolute;
-    right: 3.75em;
     padding: 1.25em;
-    top: 0;
     z-index: 10;
+    position: fixed;
+    /* Alterado para fixed para posicionamento central */
+    right: 3.75em;
+    /* Apenas em telas grandes */
+    top: 0;
+    /* Apenas em telas grandes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* Adicionado bordas arredondadas */
 }
 
 .options {
@@ -16,17 +22,34 @@
     padding-bottom: 2.5em;
 }
 
-.priceLine{
+.priceLine {
     display: flex;
     justify-content: space-between;
     margin-top: 1.875em;
 }
 
-.priceLine h2{
+.priceLine h2 {
     font-size: 1em;
 }
 
-.priceLine h2:nth-of-type(2){
+.priceLine h2:nth-of-type(2) {
     color: #beeb14;
     padding-bottom: 1.25em;
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        position: fixed;
+        /* Garante centralização no mobile */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* Centraliza o modal */
+        right: auto;
+        /* Remove a configuração para telas maiores */
+        width: 90%;
+        /* Reduz a largura no mobile */
+        max-width: 400px;
+        /* Limita a largura máxima */
+    }
 }

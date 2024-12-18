@@ -1,5 +1,31 @@
 .subtitle {
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.8em; /* Um pouco maior para destaque */
     font-weight: 700;
+    letter-spacing: 0.05em; /* Espaçamento entre letras para clareza */
+    color: #fff; /* Cor padrão ajustável */
+    text-align: center; /* Centraliza o texto */
+    margin: 0.5em 0; /* Espaçamento vertical */
+    position: relative; /* Necessário para o efeito decorativo */
+    font-family: "Roboto", sans-serif; /* Tipografia mais moderna */
+}
+
+.subtitle::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: #beeb14; /* Cor decorativa */
+    margin: 0.5em auto 0; /* Centraliza a linha */
+    border-radius: 2px; /* Suaviza as bordas */
+}
+
+@media (max-width: 768px) {
+    .subtitle {
+        font-size: 1.5em; /* Reduz o tamanho no mobile */
+    }
+
+    .subtitle::after {
+        width: 70%; /* Ajusta a linha no mobile */
+    }
 }
